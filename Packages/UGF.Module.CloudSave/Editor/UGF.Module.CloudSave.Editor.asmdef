@@ -1,0 +1,19 @@
+{
+    "name": "UGF.Module.CloudSave.Editor",
+    "rootNamespace": "UGF.Module.CloudSave.Editor",
+    "references": [
+        "GUID:2b1d75cfb9b95ba4f926bfe1b2bbd318",
+        "GUID:abdd615e45137c74ca2ce9c636c78c15"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
