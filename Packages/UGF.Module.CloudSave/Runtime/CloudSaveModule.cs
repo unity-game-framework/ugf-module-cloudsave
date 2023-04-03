@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UGF.Application.Runtime;
 using UGF.EditorTools.Runtime.Ids;
+using UGF.Logs.Runtime;
 
 namespace UGF.Module.CloudSave.Runtime
 {
@@ -44,6 +45,11 @@ namespace UGF.Module.CloudSave.Runtime
 
         public Task<object> ReadAsync(string slotName, Type dataType)
         {
+            Log.Debug("Cloud Save reading", new
+            {
+                slotName
+            });
+
             return OnReadAsync(slotName, dataType);
         }
 
@@ -56,6 +62,11 @@ namespace UGF.Module.CloudSave.Runtime
 
         public Task WriteAsync(string slotName, object data)
         {
+            Log.Debug("Cloud Save writing", new
+            {
+                slotName
+            });
+
             return OnWriteAsync(slotName, data);
         }
 
@@ -69,6 +80,11 @@ namespace UGF.Module.CloudSave.Runtime
         public Task DeleteAsync(string slotName)
         {
             if (string.IsNullOrEmpty(slotName)) throw new ArgumentException("Value cannot be null or empty.", nameof(slotName));
+
+            Log.Debug("Cloud Save deleting", new
+            {
+                slotName
+            });
 
             return OnDeleteAsync(slotName);
         }
