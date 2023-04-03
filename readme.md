@@ -4,13 +4,15 @@ UGF.Module.CloudSave
 
 ## Information
 
-- **Version**: `0.0.0-preview`
+- **Version**: `1.0.0-preview`
 - **Unity**: `2022.2`
 - **API Compatibility Level**: `.NET Standard 2.1`
 
 ### Dependencies
 
-- N/A
+- `com.ugf.module.authentication`: `1.0.0-preview`
+- `com.ugf.module.serialize`: `5.0.0`
+- `com.unity.services.cloudsave`: `2.0.1`
 
 
 ### Description
