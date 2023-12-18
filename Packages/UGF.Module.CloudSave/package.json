@@ -19,8 +19,8 @@
     "registry": "https://api.upmhub.org/registries/unity-game-framework"
   },
   "dependencies": {
-    "com.ugf.module.authentication": "1.0.0-preview",
+    "com.ugf.module.authentication": "1.0.0-preview.2",
     "com.ugf.module.serialize": "5.0.0",
-    "com.unity.services.cloudsave": "2.0.1"
+    "com.unity.services.cloudsave": "3.0.0"
   }
 }
